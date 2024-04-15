@@ -1,7 +1,50 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import SocialPill from "../components/SocialPill.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main></main>
+<Layout title="Eduardo Córdoba. Desarrollador Frontend/Fullstack. ">
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full w-20 h-20 object-cover mb-4"
+        src="photo.jpeg"
+        alt="Eduardo Cordoba photo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hola, soy Eduardo Córdoba <div class="flex justify-center items-center">
+          <Badge>Disponible para trabajar</Badge>
+        </div>
+      </h1>
+      <h2 class="text-2xl text-wrap">
+        Administrador de Sistemas reconvertido en <span
+          class="text-complementary-color"
+          >Desarrollador Frontend/Fullstack.</span
+        ><br /> He adquirido experiencia como programador en el sector del marketing
+        digital desarrollando y manteniendo e-commerce como <span
+          class="text-complementary-color">Prestashop</span
+        >, <span class="text-complementary-color">BigCommerce</span> y proyectos
+        headless con
+        <span class="text-complementary-color">Angular</span>, y ahora en
+        proceso de mejora y aprendizaje en frameworks orientados a producto
+        tales como <span class="text-complementary-color">Vue.js</span>, y
+        expandiendo a través del estudio de <span
+          class="text-complementary-color">MEVN</span
+        > y <span class="text-complementary-color">React js.</span>
+      </h2>
+      <nav class="flex gap-x-2 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/e-j-cordoba/">
+          <LinkedInIcon class="w-6 h-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/ejcordoba">
+          <GitHubIcon class="w-6 h-6" />
+          GitHub
+        </SocialPill>
+      </nav>
+    </section>
+  </main>
 </Layout>
