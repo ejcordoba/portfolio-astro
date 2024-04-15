@@ -4,13 +4,17 @@ import Badge from "../components/Badge.astro";
 import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import GitHubIcon from "../components/icons/GitHub.astro";
 import SocialPill from "../components/SocialPill.astro";
+import MailIcon from "../components/icons/Mail.astro";
 ---
 
-<Layout title="Eduardo Córdoba. Desarrollador Frontend/Fullstack. ">
+<Layout
+  title="Portfolio de Eduardo Córdoba. Desarrollador y Programador Web - Frontend/Fullstack. "
+  description="Desarrollador Web Full Stack con varios años de experiencia en programación e informática. Viviendo la adquisición de experiencia, con voluntad de aprendizaje y de expansión personal."
+>
   <main>
     <section class="w-full lg:w-[740px] mx-auto py-44">
       <img
-        class="rounded-full w-20 h-20 object-cover mb-4"
+        class="rounded-full size-20 object-cover mb-4"
         src="photo.jpeg"
         alt="Eduardo Cordoba photo"
       />
@@ -35,14 +39,18 @@ import SocialPill from "../components/SocialPill.astro";
           class="text-complementary-color">MEVN</span
         > y <span class="text-complementary-color">React js.</span>
       </h2>
-      <nav class="flex gap-x-2 mt-8">
+      <nav class="flex gap-x-4 mt-8">
         <SocialPill href="https://www.linkedin.com/in/e-j-cordoba/">
-          <LinkedInIcon class="w-6 h-6" />
+          <LinkedInIcon class="size-6" />
           LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/ejcordoba">
-          <GitHubIcon class="w-6 h-6" />
+          <GitHubIcon class="size-6" />
           GitHub
+        </SocialPill>
+        <SocialPill href="mailto:eduardo.cordoba.j@gmail.com">
+          <MailIcon class="size-6" />
+          eduardo.cordoba.j@gmail.com
         </SocialPill>
       </nav>
     </section>

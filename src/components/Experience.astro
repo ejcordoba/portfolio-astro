@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    title: "Test titulo",
+    companyAndDate: "Empresa 2023-2000",
+    description: "Una descripción",
+  },
+  {
+    title: "Test titulo",
+    companyAndDate: "Empresa 2023-2000",
+    description: "Una descripción",
+  },
+  {
+    title: "Test titulo",
+    companyAndDate: "Empresa 2023-2000",
+    description: "Una descripción",
+  },
+  {
+    title: "Test titulo",
+    companyAndDate: "Empresa 2023-2000",
+    description: "Una descripción",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-6">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
