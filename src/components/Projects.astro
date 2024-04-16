@@ -1,0 +1,53 @@
+---
+import VueJs from "./icons/VueJs.astro";
+const TAGS = {
+  VUEJS: {
+    // Sacar icono a archivo .astro
+    name: "Vue.js",
+    class: "bg-[#35495e] text-[#42b883]",
+    icon: VueJs,
+  },
+};
+const PROJECTS = [
+  {
+    title: "Brainwave app",
+    description:
+      "Task app for final project related to Frontend Vue.js Bootcamp at Ironhack",
+    link: "https://brainwavefocus.netlify.app/",
+    github:
+      "https://github.com/ejcordoba/ironhack-front-final-project-template",
+    image: "/projects/brainwave-app.webp",
+    tags: [TAGS.VUEJS],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, tags, image }) => (
+    <article>
+      <h3 class="text-2xl font-semibold text-complementary-color mb-2">
+        {title}
+      </h3>
+      <p class="text-lg mb-4 text-pretty text-complementary-color/80">
+        {description}
+      </p>
+      <ul class="flex gap-x-4 flex-row mb-2">
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex justify-center items-center gap-x-2 rounded-full text-xs ${tag.class} py-2 px-4`}
+            >
+              <tag.icon class="size-8" />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        class="rounded shadow-lg shadow-complementary-color/30"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+      />
+    </article>
+  ))
+}
