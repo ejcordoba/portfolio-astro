@@ -6,7 +6,7 @@ export default {
   darkMode: "class",
   theme: {
     screens: {
-      xs: "375px",
+      xs: "360px",
       ...defaultTheme.screens,
     },
     extend: {
