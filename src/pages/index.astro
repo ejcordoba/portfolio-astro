@@ -18,26 +18,23 @@ import Download from "@/components/icons/Download.astro";
 
 <Layout
   title="Porfolio de Eduardo Córdoba. Desarrollador y Programador Web - Frontend. "
-  description="Desarrollador Web Frontend con varios años de experiencia en programación e informática. Viviendo la adquisición de experiencia, con voluntad de aprendizaje y de expansión personal."
->
+  description="Desarrollador Web Frontend con varios años de experiencia en programación e informática. Viviendo la adquisición de experiencia, con voluntad de aprendizaje y de expansión personal.">
   <main class="px-4">
     <SectionContainer class="xs:w-full xs:mx-auto xs:py-12">
-      <div class="flex xs:gap-x-5 justify-evenly">
+      <div class="flex xs:gap-x-5 justify-between">
         <img
           class="rounded-full xs:size-36 size-20 object-cover mb-4"
           src="photo.jpeg"
           alt="Eduardo Cordoba photo"
         />
         <div class="flex justify-center items-center">
-          <Badge>Disponible para trabajar</Badge>
+          <Badge>Hablemos de proyectos</Badge>
         </div>
       </div>
       <div
-        class="flex xs:flex-col xs:max-w-xl md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
-      >
+        class="flex xs:flex-col xs:max-w-xl md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
         <h1
-          class="text-white text-balance text-5xl font-bold flex flex-row gap-x-4 xs:py-4"
-        >
+          class="text-white text-balance text-5xl font-bold flex flex-row gap-x-4 xs:py-4">
           Eduardo Córdoba
         </h1>
         <p class="xs:text-2xl xs:py-5 text-pretty">
@@ -57,7 +54,8 @@ import Download from "@/components/icons/Download.astro";
             class="text-complementary-color">MEVN</span
           > y <span class="text-complementary-color">React js.</span>
         </p>
-        <nav class="flex xs:gap-x-1 md:gap-x-4 xs:my-10">
+        <nav
+          class="flex xs:gap-x-1 md:gap-x-4 xs:my-10 xs:flex-col xs:justify-center xs:gap-y-3">
           <SocialPill href="https://www.linkedin.com/in/e-j-cordoba/">
             <LinkedInIcon class="size-6" />
             LinkedIn
@@ -75,8 +73,7 @@ import Download from "@/components/icons/Download.astro";
     </SectionContainer>
     <SectionContainer id="experience">
       <h2
-        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center"
-      >
+        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <BriefCase class="size-7" />
         Experiencia Laboral
       </h2>
@@ -92,8 +89,7 @@ import Download from "@/components/icons/Download.astro";
     </SectionContainer>
     <SectionContainer id="projects">
       <h2
-        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center"
-      >
+        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <CodeSandbox class="size-7" />
         Proyectos
       </h2>
@@ -101,8 +97,7 @@ import Download from "@/components/icons/Download.astro";
     </SectionContainer>
     <SectionContainer class="pt-10" id="about">
       <h2
-        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center"
-      >
+        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <Profile class="size-7" />
         Sobre mi
       </h2>
