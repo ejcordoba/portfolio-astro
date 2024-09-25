@@ -18,32 +18,35 @@ import Download from "@/components/icons/Download.astro";
 
 <Layout
   title="Porfolio de Eduardo Córdoba. Desarrollador y Programador Web - Frontend. "
-  description="Desarrollador Web Frontend con varios años de experiencia en programación e informática. Viviendo la adquisición de experiencia, con voluntad de aprendizaje y de expansión personal.">
+  description="Desarrollador Web Frontend con varios años de experiencia en programación e informática. Viviendo la adquisición de experiencia, con voluntad de aprendizaje y de expansión personal."
+>
   <main class="px-4">
-    <SectionContainer class="xs:w-full xs:mx-auto xs:py-12">
-      <div class="flex xs:gap-x-5 justify-between">
+    <SectionContainer class="xs:mx-auto xs:w-full xs:py-12">
+      <div class="flex justify-between xs:gap-x-5">
         <img
-          class="rounded-full xs:size-36 size-20 object-cover mb-4"
+          class="mb-4 size-20 rounded-full object-cover xs:size-36"
           src="photo.jpeg"
           alt="Eduardo Cordoba photo"
         />
-        <div class="flex justify-center items-center">
+        <h1
+          class="flex flex-row gap-x-4 text-balance text-5xl font-bold text-white xs:justify-center xs:py-4 xs:text-center xs:text-3xl"
+        >
+          Eduardo Córdoba
+        </h1>
+        <div class="flex items-center justify-center">
           <Badge>Hablemos de proyectos</Badge>
         </div>
       </div>
       <div
-        class="flex xs:flex-col xs:max-w-xl md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
-        <h1
-          class="text-white text-balance text-5xl font-bold flex flex-row gap-x-4 xs:py-4">
-          Eduardo Córdoba
-        </h1>
-        <p class="xs:text-2xl xs:py-5 text-pretty">
+        class="flex xs:max-w-xl xs:flex-col md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+      >
+        <p class="text-pretty text-2xl xs:py-5 xs:text-xl">
           Con experiencia previa en Administración de Sistemas, ahora me
           desempeño como <span class="text-complementary-color"
             >Desarrollador Frontend.</span
           >
         </p>
-        <p class="xs:text-2xl xs:py-5 text-pretty">
+        <p class="text-pretty text-2xl xs:py-5 xs:text-xl">
           He adquirido experiencia como programador en el sector del marketing
           digital desarrollando y manteniendo e-commerce como Prestashop,
           BigCommerce y proyectos headless con
@@ -55,7 +58,8 @@ import Download from "@/components/icons/Download.astro";
           > y <span class="text-complementary-color">React js.</span>
         </p>
         <nav
-          class="flex xs:gap-x-1 md:gap-x-4 xs:my-10 xs:flex-col md:flex-row xs:justify-center xs:gap-y-3 justify-center">
+          class="flex justify-center xs:my-10 xs:w-4/5 xs:flex-col xs:justify-center xs:gap-x-1 xs:gap-y-3 md:flex-row md:gap-x-4"
+        >
           <SocialPill href="https://www.linkedin.com/in/e-j-cordoba/">
             <LinkedInIcon class="size-6" />
             LinkedIn
@@ -73,7 +77,8 @@ import Download from "@/components/icons/Download.astro";
     </SectionContainer>
     <SectionContainer id="experience">
       <h2
-        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        class="mb-6 flex items-center gap-x-3 text-3xl font-semibold xs:text-4xl"
+      >
         <BriefCase class="size-7" />
         Experiencia Laboral
       </h2>
@@ -82,14 +87,15 @@ import Download from "@/components/icons/Download.astro";
         <a
           href="/cvs/cv-es-2024.pdf"
           download="CV-Eduardo-Cordoba.pdf"
-          class="rounded-full border border-complementary-color/10 flex justify-center items-center gap-x-2 py-2 px-4 bg-complementary-color/50 hover:bg-complementary-color/30 transition"
+          class="flex items-center justify-center gap-x-2 rounded-full border border-complementary-color/10 bg-complementary-color/50 px-4 py-2 transition hover:bg-complementary-color/30"
           ><DownloadIcon class="size-6" />Descargar CV</a
         >
       </div>
     </SectionContainer>
     <SectionContainer id="projects">
       <h2
-        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        class="mb-6 flex items-center gap-x-3 text-3xl font-semibold xs:text-4xl"
+      >
         <CodeSandbox class="size-7" />
         Proyectos
       </h2>
@@ -97,7 +103,8 @@ import Download from "@/components/icons/Download.astro";
     </SectionContainer>
     <SectionContainer class="pt-10" id="about">
       <h2
-        class="xs:text-4xl text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        class="mb-6 flex items-center gap-x-3 text-3xl font-semibold xs:text-4xl"
+      >
         <Profile class="size-7" />
         Sobre mi
       </h2>
