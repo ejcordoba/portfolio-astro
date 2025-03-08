@@ -25,17 +25,17 @@ const PROJECTS = [
 {
   PROJECTS.map(({ title, description, tags, image }) => (
     <article>
-      <h3 class="text-2xl font-semibold text-complementary-color mb-2">
+      <h3 class="mb-2 text-xl font-semibold text-complementary-color">
         {title}
       </h3>
-      <p class="text-lg mb-4 text-pretty text-complementary-color/80">
+      <p class="text-md mb-4 text-pretty text-complementary-color/80">
         {description}
       </p>
-      <ul class="flex gap-x-4 flex-row mb-4">
+      <ul class="mb-4 flex flex-row gap-x-4">
         {tags.map((tag) => (
           <li>
             <span
-              class={`flex justify-center items-center gap-x-2 rounded-full text-sm ${tag.class} py-2 px-4`}
+              class={`flex items-center justify-center gap-x-2 rounded-full text-sm ${tag.class} px-4 py-2`}
             >
               <tag.icon class="size-8" />
               {tag.name}

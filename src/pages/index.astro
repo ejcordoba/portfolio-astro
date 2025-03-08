@@ -20,7 +20,7 @@ import Download from "@/components/icons/Download.astro";
   title="Porfolio de Eduardo Córdoba. Desarrollador y Programador Web - Frontend. "
   description="Desarrollador Web Frontend con varios años de experiencia en programación e informática. Viviendo la adquisición de experiencia, con voluntad de aprendizaje y de expansión personal."
 >
-  <main class="px-4">
+  <main>
     <SectionContainer class="mx-auto my-10 w-full">
       <div class="my-8 flex flex-col gap-y-4 align-middle">
         <img
@@ -38,15 +38,15 @@ import Download from "@/components/icons/Download.astro";
         </div>
       </div>
       <div
-        class="flex xs:max-w-xl xs:flex-col md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
+        class="flex max-w-xl flex-col px-4 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl"
       >
-        <p class="text-pretty text-2xl xs:py-5 xs:text-xl">
+        <p class="text-pretty pb-4 text-base">
           Con experiencia previa en Administración de Sistemas, ahora me
           desempeño como <span class="text-complementary-color"
             >Desarrollador Frontend.</span
           >
         </p>
-        <p class="text-pretty text-2xl xs:py-5 xs:text-xl">
+        <p class="text-pretty pb-4 text-base">
           He adquirido experiencia como programador en el sector del marketing
           digital desarrollando y manteniendo e-commerce como Prestashop,
           BigCommerce y proyectos headless con
@@ -57,9 +57,7 @@ import Download from "@/components/icons/Download.astro";
             class="text-complementary-color">MEVN</span
           > y <span class="text-complementary-color">React js.</span>
         </p>
-        <nav
-          class="flex w-full flex-row items-center justify-around xs:my-10 xs:flex-col xs:gap-x-1 xs:gap-y-3 md:flex-row md:gap-x-4"
-        >
+        <nav class="flex w-full flex-col items-center justify-around gap-y-4">
           <SocialPill href="https://www.linkedin.com/in/e-j-cordoba/">
             <LinkedInIcon class="size-6" />
             LinkedIn
@@ -80,7 +78,7 @@ import Download from "@/components/icons/Download.astro";
         class="mb-6 flex items-center gap-x-3 text-3xl font-semibold xs:text-4xl"
       >
         <BriefCase class="size-7" />
-        Experiencia Laboral
+        <span class="text-2xl">Experiencia Laboral</span>
       </h2>
       <Experience />
       <div class="flex justify-center xs:my-10">
@@ -97,7 +95,7 @@ import Download from "@/components/icons/Download.astro";
         class="mb-6 flex items-center gap-x-3 text-3xl font-semibold xs:text-4xl"
       >
         <CodeSandbox class="size-7" />
-        Proyectos
+        <span class="text-2xl">Proyectos</span>
       </h2>
       <Projects />
     </SectionContainer>
@@ -106,7 +104,7 @@ import Download from "@/components/icons/Download.astro";
         class="mb-6 flex items-center gap-x-3 text-3xl font-semibold xs:text-4xl"
       >
         <Profile class="size-7" />
-        Sobre mi
+        <span class="text-2xl">Sobre mi</span>
       </h2>
       <AboutMe />
     </SectionContainer>

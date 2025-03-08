@@ -1,41 +1,40 @@
 <footer
-  class="rounded-lg shadow m-4 bg-black/20 backdrop-blur-lg w-full xl:w-[1120px] mx-auto my-10"
+  class="m-4 mx-auto my-10 w-full rounded-lg bg-black/20 py-4 shadow backdrop-blur-lg xl:w-[1120px]"
 >
-  <div
-    class="w-full mx-auto max-w-screen-xl p-4 xs:flex xs:flex-col-reverse xs:items-center md:justify-evenly"
-  >
-    <div>
-      <span
-        class="xs:text-md xs:text-center text-sm text-complementary-color/90 dark:text-complementary-color/90"
-        ><a href="eduardocordoba.dev" class="hover:underline">Eduardo Córdoba</a
+  <div>
+    <ul
+      class="flex flex-wrap items-center justify-center text-sm font-medium text-complementary-color/90"
+    >
+      <li>
+        <a
+          href="mailto:eduardo.cordoba.j@gmail.com"
+          class="underline-animation xs:text-lg">Contacto</a
         >
-        {new Date().getFullYear()}
-      </span>
-    </div>
-    <div>
-      Sitio Web desarrollado con <a
+      </li>
+    </ul>
+  </div>
+  <div
+    class="mx-auto flex w-full max-w-screen-xl flex-col items-center justify-evenly gap-y-1"
+  >
+    <span class="text-xs"
+      >Sitio Web desarrollado con <a
         class="underline"
         href="https://astro.build/"
         target="_blank"
         rel="noopener noreferer">Astro</a
-      >
-      e inspirado en el <a
+      ></span
+    >
+    <span class="text-xs"
+      >Inspirado en el <a
         href="https://github.com/midudev/porfolio.dev"
         class="hover:underline"
         target="_blank">porfolio de Midu</a
-      >
-    </div>
-    <div>
-      <ul
-        class="xs:mb-4 xs:justify-center flex flex-wrap items-center mt-3 text-sm font-medium text-complementary-color/90 sm:mt-0"
-      >
-        <li>
-          <a
-            href="mailto:eduardo.cordoba.j@gmail.com"
-            class="xs:text-lg underline-animation">Contacto</a
-          >
-        </li>
-      </ul>
-    </div>
+      ></span
+    >
+    <span
+      class="text-xs text-complementary-color/90 dark:text-complementary-color/90 xs:text-center"
+      ><a href="eduardocordoba.dev" class="hover:underline">Eduardo Córdoba</a>
+      {new Date().getFullYear()}
+    </span>
   </div>
 </footer>
